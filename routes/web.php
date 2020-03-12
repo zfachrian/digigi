@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('front.index');
-});
+// Route::get('/', function () {
+//     return view('front.index');
+// });
+
+//home
+Route::get('/', 'front\homeController@index');
+
+//shop
+Route::get('/shop', 'front\shopController@index');
+
+//contact
+Route::get('/contact', 'front\contactController@index');
+
+//review
+Route::get('/review', 'front\reviewController@index');
